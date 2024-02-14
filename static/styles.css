@@ -105,9 +105,9 @@ section > ul {
     fill: var(--bg-800);
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
     #page {
-        min-width: 350px;
+        min-width: 100%;
     }
     main {
         flex-direction: column;
