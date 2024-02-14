@@ -58,6 +58,7 @@ header > a, svg {
 main {
     padding: 1rem .5rem;
     display: flex;
+    flex-direction: row;
 }
 
 .section-column {
@@ -102,4 +103,17 @@ section > ul {
 #contact > div > svg {
     height: 20px;
     fill: var(--bg-800);
+}
+
+@media screen and (max-width: 450px) {
+    #page {
+        min-width: 350px;
+    }
+    main {
+        flex-direction: column;
+    }
+
+    .section-column {
+        width: 100%;
+    }
 }
