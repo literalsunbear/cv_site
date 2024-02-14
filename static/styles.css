@@ -1,8 +1,14 @@
 *, ::before, ::after {
+    cursor: default;
     padding: 0;
     margin: 0;
     line-height: 1.2rem;
     font-family: monospace;
+    line-height: 1.4;
+}
+
+a, svg {
+    cursor: pointer;
 }
 
 p, ul, strong {
@@ -66,7 +72,7 @@ section {
     /* border: 1px solid blue; */
 
     margin: .5rem;
-    padding: 2.5rem .5rem .5rem .5rem;
+    padding: 3.5rem .5rem .5rem .5rem;
     position: relative;
     box-shadow: 4px 4px 0px var(--box-shadow);
 
