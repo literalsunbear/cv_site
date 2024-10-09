@@ -11,7 +11,7 @@ a, svg {
     cursor: pointer;
 }
 
-p, ul, strong {
+p, ul, strong, a {
     font-size: 18px;
     color: var(--bg-800);
 }
@@ -126,7 +126,7 @@ section > ul {
 }
 
 #sunny_icon {
-    height: 7.5%;
+    height: 10%;
     margin: auto;
     cursor: default;
 }
