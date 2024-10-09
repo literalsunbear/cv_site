@@ -12,7 +12,7 @@ a, svg {
 }
 
 p, ul, strong {
-    font-size: 14px;
+    font-size: 18px;
     color: var(--bg-800);
 }
 
@@ -126,10 +126,19 @@ section > ul {
 }
 
 #sunny_icon {
-    width: 33%;
+    height: 7.5%;
     margin: auto;
-    opacity: 75%;
+    cursor: default;
 }
+
+#sunny_icon path {
+    fill: #6a5661;
+}
+#sunny_icon:hover path {
+    fill: url(#sunny_icon_gradient);
+}
+
+
 
 @media screen and (max-width: 500px) {
     #page {
