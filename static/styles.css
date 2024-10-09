@@ -151,4 +151,9 @@ section > ul {
     .section-column {
         width: 100%;
     }
+
+    #sunny_icon {
+        width: 50%;
+        margin: 2rem auto;
+    }
 }
