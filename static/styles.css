@@ -49,11 +49,36 @@ header {
     align-items: center;
     background: var(--bg-600);
 }
+header > div > h1> span {
+    font-size: 1.2rem;
+}
 
-header > a, svg {
-    height: 50px;
+#contact-container {
+    display: flex;
+    gap: 1.2rem;
+}
+#contact-container > div {
+    height: 40px;
+    width: 40px;
+    position: relative;
+}
+#contact-container > div > a, #contact-container > svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+#contact-container > div > a {
+    z-index: 999;
+}
+#contact-container > div > svg {
     fill: var(--bg-200);
 }
+
+/* header > a, svg {
+    height: 50px;
+} */
 
 main {
     padding: 1rem .5rem;
@@ -113,7 +138,16 @@ section > h2 {
 section > ul {
     padding-left: 1.5rem;
 }
+
+/* projects */
+#projects {
+    display: none;
+}
+
 /* contact */
+#contact {
+    display: none;
+}
 #contact > div {
     display: flex;
     align-items: center;
@@ -134,9 +168,9 @@ section > ul {
 #sunny_icon path {
     fill: #6a5661;
 }
-#sunny_icon:hover path {
+/* #sunny_icon:hover path {
     fill: url(#sunny_icon_gradient);
-}
+} */
 
 
 
@@ -146,6 +180,16 @@ section > ul {
     }
     main {
         flex-direction: column;
+    }
+
+    #contact-container {
+        flex-direction: column;
+        margin-left: 25px;
+    }
+
+    #contact-container > div {
+        height: 30px;
+        width: 30px;
     }
 
     .section-column {
